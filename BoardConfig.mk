@@ -25,6 +25,7 @@ TARGET_CPU_VARIANT := krait
 
 TARGET_NO_BOOTLOADER := true
 
+TARGET_PREBUILT_KERNEL := device/lge/mako-kernel/kernel
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677 user_debug=31
@@ -146,4 +147,4 @@ EXTENDED_FONT_FOOTPRINT := true
 MALLOC_IMPL := dlmalloc
 
 -include vendor/lge/mako/BoardConfigVendor.mk
--include vendor/am/Android.mk
+#-include vendor/am/Android.mk
